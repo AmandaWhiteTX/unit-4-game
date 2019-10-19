@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -21,55 +23,59 @@
 
       <div class="row instructions">
         <div class="col-md-12">
-          <h3> You will be given a random number at the start of the game.<br>
-          There are four crystals below. Clicking on a crystal will add a specific amount of points to your total user score.<br>
-          You win the game by matching your total user score to the game score, you lose the game if your total score goes above the game score.<br>
-          The value of each crystal is hidden until you click on it.<br>
-          Each time the game starts, the game will change the values of each crystal and game score. </h3>
+          <h3> 
+                At the start of the game you will be given a random number to match.
+                Each of the crystals below will add a specific amount of points to your total score.
+                The value of each crystal is hidden from you until you click on it.
+                <br>
+                <br>
+                You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+                Each time when the game starts, the values of each crystal is reset to a new number of points.</h3>
         </div>
       </div>
 
       <div class="row third">
         <div class="col-md-2"></div>
-        <div class="col-md-3" id="gScore"><h2>Game Score:</h2></div>
+        <div class="col-md-3" id="gScore">Match Score</div>
         <div class="col-md-2"></div>
-        <div class="col-md-3">
-          <div class="row" id="wScore">
-              <div class="col-md-4"><h2>Wins:</h2></div>
-          </div>
-          <div class="row" id="lScore">
-              <div class="col-md-4"><h2>Losses:</h2></div>
-          </div>
-          <div class="col-md-2"></div>
+        <div class="col-md-3" id="uScore">Your Score:</div>
+        <div class="col-md-2"></div>
         </div>
       </div>
 
       <div class="row crystals">
         <div class="col-md-12">
           <div class="row">
-            <div class="col-md-3 crystalPic">
+                <div class="col-md-2"></div>
+            <div class="col-md-2 crystalPic">
               <input type="image" class="btn" id="crystal1" src="assets/images/3blue.png"></input>
             </div>
-            <div class="col-md-3 crystalPic">
+            <div class="col-md-2 crystalPic">
               <input type="image" class="btn" id="crystal2" src="assets/images/3pink.png"></input>
             </div>
-            <div class="col-md-3 crystalPic">
+            <div class="col-md-2 crystalPic">
               <input type="image" class="btn" id="crystal3" src="assets/images/3teal.png"></input>
             </div>
-            <div class="col-md-3 crystalPic">
+            <div class="col-md-2 crystalPic">
               <input type="image" class="btn" id="crystal4" src="assets/images/3purple.png"></input>
+              <div class="col-md-2"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row fifth">
-        <div class="col-md-4"></div>
-        <div class="col-md-3" id="uScore">User Score:</div>
-        <div class="col-md-4"></div>
+      <div class="row fifth"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-3" id="wScore">Wins:</div>
+        <div class="col-md-2"></div>
+        <div class="col-md-3" id="lScore">Losses:</div>
+        <div class="col-md-2"></div>
+    </div>
+        </div>
       </div>
 
-    </div>
+
+         
 
     <script src="assets/javascript/game.js"></script>
 
